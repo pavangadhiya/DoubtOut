@@ -2,6 +2,8 @@
 
 # dependencies
 /node_modules
+/backand/node_modules
+/backand/scratch
 /.pnp
 .pnp.js
 

@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Editor from './components/Editor/Editor';
+import Homepage from './components/Homepage/Homepage';
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
+import Questions from './components/Questions/Questions';
+import Content from './components/Questions/Content';
+import Login from './components/Login/Login';
+import Register from './components/Register/Register';
+import Profile from './components/Profile/Profile';
+import UserQuestionContent from './components/Profile/Content';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     <BrowserRouter>
+      <Navbar />
+      <Routes>
+
+        <Route path = "/" element = {<Homepage/>}/>
+     
+        <Route path = "/editor" element = {<Editor/>}/>
+        <Route path = "/login" element = {<Login/>}/>
+        <Route path = "/register" element = {<Register/>}/>
+        <Route path="/questions" element = {<Questions />}></Route>
+        <Route path="/question/:type" element = {<Content />}></Route>
+        <Route path="/answer/:type" element = {<UserQuestionContent />}></Route>
+        <Route path='/profile' element={<Profile />}></Route>
+      </Routes>
+      {/* <Footer /> */}
+     </BrowserRouter>
     </div>
   );
 }
