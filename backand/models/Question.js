@@ -27,7 +27,12 @@ const QuestionSchema = new Schema({
 
     date:{
         type:Date,
-        default:Date.now
+        default:Date.now()
+    },
+
+    votes:{
+        type:Number,
+        required:true
     }
 })
 
