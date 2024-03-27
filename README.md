@@ -1,6 +1,3 @@
-## Take a Look
-Link 👉 https://doubtout.netlify.app/
-
 # Features
 ### User side
 - ask the question
