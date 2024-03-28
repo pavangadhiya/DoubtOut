@@ -1,11 +1,11 @@
-## Take a Look
-Link 👉 https://doubtout.netlify.app/
 
 # Features
 ### User side
-- ask the question
+- ask the questions
 - give the answer
-- upvote and downvote
+- upvote and downvote questions
+- give comments
+- search questions and find questions based on tag
 - their profile Analysis
 
 ### Admin Side
